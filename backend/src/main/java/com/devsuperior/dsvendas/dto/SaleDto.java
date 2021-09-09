@@ -1,5 +1,6 @@
 package com.devsuperior.dsvendas.dto;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 import com.devsuperior.dsvendas.entities.Sale;
@@ -13,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SaleDto {
+public class SaleDto implements Serializable {
     
     private Long id;
     private Integer visited;
